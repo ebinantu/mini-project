@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Dashboard</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f6f9;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #34495e;
+      width: 200px;
+      height: 100vh;
+      position: fixed;
+      top: 70px;
+      left: 0;
+      padding-top: 30px;
+    }
+
+    nav a {
+      display: block;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #2c3e50;
+    }
+
+    .main {
+      margin-left: 220px;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    .logout {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: #e74c3c;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .logout:hover {
+      background: #c0392b;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome, John Doe</h1>
+    <button class="logout">Logout</button>
+  </header>
+
+  <nav>
+    <a href="#">Profile</a>
+    <a href="#">Notifications</a>
+    <a href="#">Subjects</a>
+    <a href="#">Timetable</a>
+    <a href="#">Fees</a>
+    <a href="#">Exams</a>
+    <a href="#">Downloads</a>
+    <a href="#">Contact Office</a>
+  </nav>
+
+  <div class="main">
+    <div class="card">
+      <h2>📢 Latest Notifications</h2>
+      <ul>
+        <li>Exam on 20 July – Hall Ticket available</li>
+        <li>College fee due by 18 July</li>
+        <li>Time table for Semester 5 uploaded</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>📅 Upcoming Exams</h2>
+      <ul>
+        <li>Maths II – 20 July 10:00 AM</li>
+        <li>Physics – 25 July 2:00 PM</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>💰 Fee Status</h2>
+      <p>College Fee: <strong>Pending</strong></p>
+      <p>Exam Fee: <strong>Paid</strong></p>
+    </div>
+
+    <div class="card">
+      <h2>📥 Quick Downloads</h2>
+      <button>Download Admit Card</button>
+      <button>Download Marksheet</button>
+    </div>
+  </div>
+
+</body>
+</html>
